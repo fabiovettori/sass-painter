@@ -45,7 +45,9 @@
             }
             > ul {
                 position: absolute;
+                z-index: 1;
                 display: none;
+                background-color: $tertiary_color;
                 top: 54px;
                 left: 0;
                 li.more {
@@ -85,7 +87,9 @@
                     }
                     ul {
                         position: absolute;
+                        z-index: 1;
                         display: none;
+                        background-color: $tertiary_color;
                         left: 200px;
                         top: 0;
                     }

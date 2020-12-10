@@ -1,0 +1,125 @@
+.hero {
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
+    background-size: cover;
+    background-position: -100px 0;
+
+    .left-card {
+        color: $tertiary_color;
+        padding-top: 30px;
+
+        h2 {
+            font-size: 29px;
+            white-space: nowrap;
+            margin: 20px 0;
+        };
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            li {
+                font-size: 16px;
+                padding: 3px 10px 3px 20px;
+                position: relative;
+
+                &:before {
+                    content: "\f054";
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: bold;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        button {
+            @include flex (row, center, center);
+            color: $tertiary_color;
+            padding: 5px 15px;
+            background-color: $hero_color_omplementary;
+            border: none;
+
+            &:hover {
+                opacity: .85;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            .fas {
+                font-size: 20px;
+                margin-left: 10px;
+                border-left: 1px solid $tertiary_color;
+                padding-left: 10px;
+                line-height: 34px;
+            }
+        }
+    };
+
+    .rigth-card {
+        background-color: $primary_color;
+        margin-top: 30px;
+        padding: 30px 15px 120px 15px;
+
+        div.top {
+            @include flex(row, space-between, center);
+            color: $tertiary_color;
+            font-size: 26px;
+
+            span {
+                position: relative;
+
+                &:after {
+                    content: 'download';
+                    display: block;
+                    position: absolute;
+                    font-size: 14px;
+                    color: $hero_color_omplementary;
+                    text-transform: uppercase;
+                    bottom: -20px;
+                }
+            }
+        }
+
+        button {
+            background-color: $secondary_color;
+            color: $tertiary_color;
+            padding: 5px 30px;
+            border: none;
+            margin: 20px 0;
+        }
+
+        .special-offers {
+            display: block;
+            background-color: $tertiary_color;
+            color: $primary_color;
+            padding: 10px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            h4 {
+                font-size: 18px;
+                margin: 0;
+            }
+
+            p {
+                font-size: 14px;
+                margin: 0;
+            }
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
