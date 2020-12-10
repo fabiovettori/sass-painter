@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-top {
+  background-color: #101010;
+  font-size: 12px;
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+
+.header-top > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-top > div > div {
+  margin-left: 30px;
+}
+
+.header-top > div a {
+  color: #989898;
+}
+
+.header-top > div a:hover {
+  color: #ffffff;
+}
+
+.header-top > div span {
+  color: #009cff;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.header-top > div select {
+  text-transform: capitalize;
+}
+
+.header-bottom {
+  background-color: #101010;
+  padding: 15px 0 0;
+}
+
+.header-bottom ul.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.header-bottom ul.menu > li {
+  padding: 15px;
+  position: relative;
+}
+
+.header-bottom ul.menu > li:hover {
+  background-color: #ffffff;
+}
+
+.header-bottom ul.menu > li:hover a {
+  color: #101010;
+}
+
+.header-bottom ul.menu > li:hover > ul {
+  display: block;
+}
+
+.header-bottom ul.menu > li > ul {
+  position: absolute;
+  display: none;
+  top: 54px;
+  left: 0;
+}
+
+.header-bottom ul.menu > li > ul li.more:hover:after {
+  color: #101010;
+}
+
+.header-bottom ul.menu > li > ul li.more:after {
+  content: "\F0DA";
+  color: #d6d6d6;
+  font-weight: bold;
+  font-family: "Font Awesome 5 Free";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-bottom ul.menu > li > ul li {
+  color: #101010;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  min-width: 200px;
+}
+
+.header-bottom ul.menu > li > ul li:hover {
+  background-color: #d6d6d6;
+}
+
+.header-bottom ul.menu > li > ul li:hover ul {
+  display: block;
+}
+
+.header-bottom ul.menu > li > ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.header-bottom ul.menu > li > ul li ul {
+  position: absolute;
+  display: none;
+  left: 200px;
+  top: 0;
+}
+
+.header-bottom ul.menu span {
+  color: #878787;
+  font-size: 10px;
+}
+
+.header-bottom .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-bottom .logo img {
+  max-width: 100%;
+}
+
+.header-bottom a {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.header-bottom a:hover {
+  text-decoration: none;
+}
+
