@@ -247,3 +247,28 @@
         };
     }
 }
+
+.more {
+    background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg");
+    padding: 100px 0;
+
+    .card {
+        @include flex(row, center, center);
+        background-color: $tertiary_color;
+        padding: 0 30px;
+        height: 350px;
+        border-radius: 0;
+
+        > div {
+            h3 {
+                font-size: 24px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
