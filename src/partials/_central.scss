@@ -83,7 +83,7 @@
 }
 
 .slider {
-    padding: 100px 0 0;
+    padding: 100px 0;
     color: $color_text_secondary;
 
     h2 {
@@ -146,4 +146,10 @@
             }
         }
     }
+}
+
+.scroll {
+    background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg");
+    background-attachment: fixed;
+    height: 650px;
 }

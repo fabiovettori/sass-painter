@@ -11311,7 +11311,7 @@ nav ul li.active {
 }
 
 .slider {
-  padding: 100px 0 0;
+  padding: 100px 0;
   color: #333333;
 }
 
@@ -11382,5 +11382,11 @@ nav ul li.active {
 
 .slider .before-after-slider .arrows span:hover {
   opacity: 0.5;
+}
+
+.scroll {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg");
+  background-attachment: fixed;
+  height: 650px;
 }
 
