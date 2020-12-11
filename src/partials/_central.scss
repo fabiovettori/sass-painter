@@ -1,0 +1,82 @@
+.introduction {
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg');
+    background-size: cover;
+    color: $tertiary_color;
+    padding: 100px 0 0;
+
+    h2 {
+        font-size: 36px;
+        margin: 20px 0 10px;
+    };
+
+    p {
+        font-size: 18px;
+        margin: 20px auto;
+        max-width: 75%;
+    };
+
+    a {
+        display: block;
+        color: $tertiary_color;
+        font-size: 18px;
+        margin: 30px 0 50px;
+
+        &:hover {
+            text-decoration: none;
+        };
+
+        .far {
+            color: $intro_color_secondary;
+            border: 1px solid $intro_color_secondary;
+            margin-right: 10px;
+            padding: 5px;
+            border-radius: 50%;
+            height: 34px;
+            width: 34px;
+        }
+    }
+
+    .video-section {
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:hover .icon-play {
+            border: 2px solid $intro_color_secondary;
+            color: $intro_color_secondary;
+        }
+    }
+
+    .frame {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .content {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+    };
+
+    .icon-play {
+        @include flex (row, center, center);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid $tertiary_color;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+
+        .fa-play {
+            font-size: 70px;
+        }
+    }
+}

@@ -299,6 +299,7 @@ nav ul {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin: 0;
 }
 
 nav ul li {
@@ -317,5 +318,91 @@ nav ul li.active {
   font-weight: 500;
   background-color: #ffffff;
   border-bottom: 3px solid #101010;
+}
+
+.introduction {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg");
+  background-size: cover;
+  color: #ffffff;
+  padding: 100px 0 0;
+}
+
+.introduction h2 {
+  font-size: 36px;
+  margin: 20px 0 10px;
+}
+
+.introduction p {
+  font-size: 18px;
+  margin: 20px auto;
+  max-width: 75%;
+}
+
+.introduction a {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 30px 0 50px;
+}
+
+.introduction a:hover {
+  text-decoration: none;
+}
+
+.introduction a .far {
+  color: #989898;
+  border: 1px solid #989898;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+}
+
+.introduction .video-section {
+  position: relative;
+}
+
+.introduction .video-section:hover {
+  cursor: pointer;
+}
+
+.introduction .video-section:hover .icon-play {
+  border: 2px solid #989898;
+  color: #989898;
+}
+
+.introduction .frame {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.introduction .content {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+.introduction .icon-play {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #ffffff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.introduction .icon-play .fa-play {
+  font-size: 70px;
 }
 
