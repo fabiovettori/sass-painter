@@ -11439,8 +11439,55 @@ nav ul li.active {
 }
 
 .scroll-2 {
-  background-image: url("https://www.painterartist.com//static/ptr/product_content/painteressentials/7/image-bg-01.jpg");
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg");
   background-attachment: fixed;
   height: 650px;
+}
+
+.inspiration {
+  padding: 100px 0;
+}
+
+.inspiration .wrapper {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.inspiration h2 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.inspiration .examples {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 20px;
+}
+
+.inspiration .examples > div {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.inspiration .examples > div:hover img {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.inspiration .examples > div img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.inspiration .examples > div h5 {
+  font-size: 20px;
+  position: absolute;
+  color: #ffffff;
+  text-transform: capitalize;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
