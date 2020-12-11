@@ -272,34 +272,3 @@
         }
     }
 };
-
-footer {
-    .top {
-        padding: 100px 0;
-        background-color: $color_footer_top_primary;
-
-        ul {
-            font-size: 15px;
-            color: $color_footer_top_secondary;
-
-            li:first-of-type {
-                font-size: 15px;
-                font-weight: 400;
-                padding-bottom: 10px;
-            }
-
-            li {
-                font-size: 12px;
-                padding: 3px 0;
-
-                a {
-                    color: $color_footer_top_secondary;
-                }
-            }
-        }
-
-        .social {
-            font-size: 36px;
-        }
-    }
-}

@@ -11518,7 +11518,7 @@ nav ul li.active {
 }
 
 footer .top {
-  padding: 100px 0;
+  padding: 100px 0 30px;
   background-color: #ececec;
 }
 
@@ -11544,5 +11544,60 @@ footer .top ul li a {
 
 footer .top .social {
   font-size: 36px;
+}
+
+footer .top .social .fa-instagram-square {
+  color: #e4405f;
+}
+
+footer .top .social .fa-facebook-square {
+  color: #3b5998;
+}
+
+footer .top .social .fa-twitter-square {
+  color: #1da1f2;
+}
+
+footer .top .social .fa-youtube-square {
+  color: #cd201f;
+}
+
+footer .top .social .fa-pinterest-square {
+  color: #bd081c;
+}
+
+footer .top .social .fa-rss-square {
+  color: #ff8d00;
+}
+
+footer .bottom {
+  background-color: #1e1e1e;
+  padding: 20px 0;
+}
+
+footer .bottom img:nth-of-type(2) {
+  margin: 0 20px;
+}
+
+footer .bottom .credits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .bottom .credits span {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+footer .bottom .credits a {
+  font-size: 12px;
+  color: #666;
+  margin-right: 20px;
+}
+
+footer .bottom .credits a:hover {
+  color: #ffffff;
 }
 
