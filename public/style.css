@@ -11491,12 +11491,12 @@ nav ul li.active {
   transform: translate(-50%, -50%);
 }
 
-.more {
+.more-info {
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg");
   padding: 100px 0;
 }
 
-.more .card {
+.more-info .card {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11507,13 +11507,13 @@ nav ul li.active {
   border-radius: 0;
 }
 
-.more .card > div h3 {
+.more-info .card > div h3 {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.more .card > div p {
+.more-info .card > div p {
   font-size: 18px;
 }
 
