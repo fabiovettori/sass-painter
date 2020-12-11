@@ -289,3 +289,33 @@
   font-size: 14px;
 }
 
+nav {
+  color: #101010;
+  background-color: #e6e6e6;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav ul li {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 12px 24px 13px;
+  border-bottom: 3px solid tranparent;
+}
+
+nav ul li:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+nav ul li.active {
+  font-weight: 500;
+  background-color: #ffffff;
+  border-bottom: 3px solid #101010;
+}
+

@@ -1,0 +1,26 @@
+nav {
+    color: $primary_color;
+    background-color: $nav_color_primary;
+
+    ul {
+        @include flex (row, flex-start, center);
+
+        li {
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 12px 24px 13px;
+            border-bottom: 3px solid tranparent;
+
+            &:hover {
+                background-color: #eee;
+                cursor: pointer;
+            };
+
+            &.active {
+                font-weight: 500;
+                background-color: $tertiary_color;
+                border-bottom: 3px solid $primary_color;
+            }
+        }
+    }
+}
