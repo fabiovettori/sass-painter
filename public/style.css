@@ -11384,9 +11384,57 @@ nav ul li.active {
   opacity: 0.5;
 }
 
-.scroll {
+.scroll-1 {
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg");
   background-attachment: fixed;
   height: 650px;
+}
+
+.software-description {
+  color: #ffffff;
+  background-color: #222;
+}
+
+.software-description .tool {
+  padding: 100px 0 25px;
+}
+
+.software-description .tool h2 {
+  font-size: 36px;
+  margin: 20px 0 10px;
+}
+
+.software-description .tool p {
+  margin: 20px auto 80px;
+  max-width: 75%;
+}
+
+.software-description .tool img {
+  max-width: 80%;
+}
+
+.software-description .brushes,
+.software-description .canvas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.software-description .brushes h3,
+.software-description .canvas h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.software-description .brushes p,
+.software-description .canvas p {
+  font-size: 18px;
+}
+
+.software-description .brushes img,
+.software-description .canvas img {
+  width: 100%;
 }
 

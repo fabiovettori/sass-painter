@@ -148,8 +148,49 @@
     }
 }
 
-.scroll {
+.scroll-1 {
     background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg");
     background-attachment: fixed;
     height: 650px;
+}
+
+.software-description {
+    color: $tertiary_color;
+    background-color: $color_software-description_primary;
+
+    .tool {
+        padding: 100px 0 25px;
+
+        h2 {
+            font-size: 36px;
+            margin: 20px 0 10px;
+        };
+
+        p {
+            margin: 20px auto 80px;
+            max-width: 75%;
+        };
+
+        img {
+            max-width: 80%;
+        }
+    }
+
+    .brushes, .canvas {
+        @include flex(row, center, center);
+        padding: 50px 0;
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        };
+
+        p {
+            font-size: 18px;
+        };
+
+        img {
+            width: 100%;
+        }
+    }
 }
