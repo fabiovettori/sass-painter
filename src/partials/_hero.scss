@@ -16,7 +16,7 @@
         h3 {
             font-size: 20px;
             margin-bottom: 20px;
-        }
+        };
 
         ul {
             margin-bottom: 20px;
@@ -34,9 +34,9 @@
                     left: 0;
                     top: 50%;
                     transform: translateY(-50%);
-                }
-            }
-        }
+                };
+            };
+        };
 
         button {
             @include flex (row, center, center);
@@ -45,13 +45,17 @@
             background-color: $hero_color_omplementary;
             border: none;
 
+            &:focus {
+                outline: none;
+            }
+
             &:hover {
                 opacity: .85;
-            }
+            };
 
             p {
                 margin: 0;
-            }
+            };
 
             .fas {
                 font-size: 20px;
@@ -59,8 +63,8 @@
                 border-left: 1px solid $tertiary_color;
                 padding-left: 10px;
                 line-height: 34px;
-            }
-        }
+            };
+        };
     };
 
     .rigth-card {
@@ -84,9 +88,9 @@
                     color: $hero_color_omplementary;
                     text-transform: uppercase;
                     bottom: -20px;
-                }
-            }
-        }
+                };
+            };
+        };
 
         button {
             background-color: $secondary_color;
@@ -94,7 +98,11 @@
             padding: 5px 30px;
             border: none;
             margin: 20px 0;
-        }
+
+            &:focus {
+                outline: none;
+            }
+        };
 
         .special-offers {
             display: block;
@@ -110,16 +118,81 @@
             h4 {
                 font-size: 18px;
                 margin: 0;
-            }
+            };
 
             p {
                 font-size: 14px;
                 margin: 0;
-            }
+            };
 
             a {
                 font-size: 14px;
-            }
+            };
+        };
+    };
+};
+
+.pop-hero-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .pop-hero {
+        background-color: $tertiary_color;
+        padding: 30px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 900px;
+
+        > div {
+            width: 50%;
+        };
+
+        img {
+            width: 50%;
+        };
+
+        h2 {
+            font-size: 23px;
+            font-weight: 700;
+            clear: both;
+            margin-bottom: 20px;
+        };
+
+        p {
+            font-size: 16px;
+        };
+
+        ul {
+            li {
+                font-size: 13px;
+                padding: 5px 0;
+                position: relative;
+
+                &:before {
+                    content: "\f054";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: bold;
+                    display: inline-block;
+                    font-size: 12px;
+                    margin-right: 5px;
+                };
+            };
+        };
+
+        .fa-times {
+            color: $hero_color_omplementary;
+            font-size: 18px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
         }
-    }
-}
+    };
+};
