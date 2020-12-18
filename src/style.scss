@@ -1,12 +1,16 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+$fa-font-path: 'fontawesome';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+
 @import 'partials/_variables.scss';
 @import 'partials/_mixin.scss';
-@import 'partials/common.scss';
+@import 'partials/_common.scss';
 @import 'partials/_header.scss';
 @import 'partials/_hero.scss';
 @import 'partials/_nav.scss';
 @import 'partials/_central.scss';
 @import 'partials/_footer.scss';
-
-$fa-font-path: 'fonts';
